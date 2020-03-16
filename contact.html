@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Travel Anywhere</title>
+
+
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+        <section class="colored-section" id="title">
+
+          <div class="container-fluid">
+
+            <!-- Nav Bar -->
+
+            <nav class="navbar navbar-expand-lg navbar-dark">
+
+              <a class="navbar-brand" href="index.html">Travel Anywhere</a>
+
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                </ul>
+
+
+              </div>
+            </nav>
+            <nav class="navbar2 navbar-expand-lg navbar-dark">
+
+
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" id="loginNav" href="login.html">Register/Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="mylist.html" onclick="addToList()" >My list</a>
+                  </li>
+
+                </ul>
+
+
+            </nav>
+          </div>
+
+        </section>
+
+        <section class="colored-section" id="contactus" >
+
+
+          <div class="container-fluid">
+              <h1>Contact Us Form </h1>
+            <form class="needs-validation" novalidate>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="firstName">First name</label>
+          <input type="text" class="form-control" id="firstName1" placeholder="First Name" value="" required>
+
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="lastName">Last name</label>
+          <input type="text" class="form-control" id="lastName1" placeholder="Last Name" value="" required>
+
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email1" placeholder="you@example.com">
+
+      </div>
+
+      <div class="mb-3">
+        <label for="address">Address</label>
+        <input type="text" class="form-control" id="address1" placeholder="1234 Main St" required>
+
+      </div>
+        <div class="row">
+        <div class="col-md-6 mb-4">
+          <label for="country">Country</label>
+          <select class="custom-select d-block w-100" id="country1" required>
+            <option value="">Choose...</option>
+              <option>India</option>
+              <option>Canada</option>
+            <option>United States</option>
+            </select>
+
+        </div>
+        <div class="col-md-6 mb-4">
+          <label for="state">State</label>
+          <select class="custom-select d-block w-100" id="state1" required>
+            <option value="">Choose...</option>
+            <option>Ontario</option>
+            <option>Manitoba</option>
+            <option>British Columbia</option>
+          </select>
+
+        </div>
+        <label for="question">Any Queries?</label>
+        <div class="mb-3">
+
+          <textarea name="question" rows="3" cols="40" id="textArea1" ></textarea>
+
+        </div>
+          <hr class="mb-4">
+      <button class="btn btn-primary btn-lg btn-block" onclick="submitForm()" type="submit">Submit</button>
+    </form>
+    <div class="location">
+      <p>We are located at: <br>
+        Lambton College <br>
+        North York, ON M1W2Y2</p>
+
+        <p>Phone Number:
+        <a class="mobile" href="tel:6467778765">(647)777-8765</a></p>
+        <p>Email Address:
+        <a href="mailto:TravelAnywhere.com" class="contact">TravelAnywhere.com</a></p>  </div>
+  </div>
+
+            </section>
+
+            <footer class="white-section" id="footer">
+              <div class="container-fluid">
+              <a href=""><i class="social-icon fab fa-facebook-f"></i></a>
+              <a href=""><i class="social-icon fab fa-twitter"></i></a>
+              <a href="">  <i class="social-icon fab fa-instagram"></i></a>
+
+                <p>© Copyright 2018 Travel Anywhere </p>
+              </div>
+            </footer>
+          <script src="scripts/script.js"></script>
+
+        </body>
+        </html>
